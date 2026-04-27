@@ -1,0 +1,193 @@
+/* =========================
+   VARIABLES DE COLOR
+========================= */
+:root {
+  --azul-oscuro: #424874;
+  --lila: #d6e3f7;
+  --azul-suave: #A6B1E1;
+  --gris-claro: #CACFD6;
+  --verde-agua: #D6E5E3;
+  --blanco: #FFFFFF;
+}
+
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lila);
+  color: var(--azul-oscuro);
+  line-height: 1.5;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3 {
+  margin-bottom: 10px;
+  color: var(--azul-oscuro);
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  text-decoration: none;
+  color: var(--azul-suave);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--azul-oscuro);
+}
+
+/* =========================
+   BOTONES
+========================= */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--azul-suave);
+  color: var(--azul-oscuro);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+/* =========================
+   INPUTS Y SELECTS
+========================= */
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--gris-claro);
+  margin: 5px 0;
+}
+
+/* =========================
+   TABLAS
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--blanco);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: var(--azul-suave);
+  color: var(--azul-oscuro);
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--gris-claro);
+}
+
+tr:hover {
+  background-color: var(--verde-agua);
+}
+
+/* =========================
+   CONTENEDORES GENERALES
+========================= */
+.container {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+  background-color: var(--blanco);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid var(--gris-claro);
+}
+
+/* =========================
+   FILTROS / BOTONES ACTIVOS
+========================= */
+.activo {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   UTILIDADES
+========================= */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 20px;
+}
+.conversor {
+  padding: 20px;
+  background-color: var(--lila);
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* SOLO afecta a este componente */
+.conversor input,
+.conversor select {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--gris-claro);
+  background-color: white;
+}
+
+/* Sobrescribe el global */
+.conversor button {
+  background-color: var(--azul-suave);
+  color: var(--azul-oscuro);
+}
+
+.conversor button:hover {
+  background-color: var(--azul-oscuro);
+  color: white;
+}
+
+.conversor h1 {
+  color: var(--azul-oscuro);
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
