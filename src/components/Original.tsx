@@ -23,6 +23,7 @@ function Original() {
   const [result, setResult] = useState<number>(0);
 
   useEffect(() => {
+    console.log("Coins:", coins);
     const fetchData = async () => {
       const res = await fetch(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=100&page=1"
@@ -89,7 +90,6 @@ function Original() {
           ))}
         </select>
       </div>
-
       <h2>
         Resultado: {result.toFixed(6)}
       </h2>

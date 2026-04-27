@@ -1,5 +1,3 @@
-import React from "react";
-
 function Informativa() {
   return (
     <div style={{ padding: "20px", lineHeight: "1.6" }}>
